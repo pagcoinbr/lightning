@@ -48,10 +48,7 @@
   "scripts": {
     "test": "npx nyc@17.1.0 node --experimental-test-coverage --test && npm run test:types",
     "test:types": "tsd",
-    "unit-tests": "node --test && npm run test:types",
-    "brln_test": "node examples/brln-complete-example.js",
-    "brln_elements": "node examples/elements_integration_example.js",
-    "brln_monitor": "node -e \"require(\\\"./examples/elements_integration_example.js\\\").monitorLiquidAssets()\""
+    "unit-tests": "node --test && npm run test:types"
   },
   "tsd": {
     "directory": "test/typescript"
