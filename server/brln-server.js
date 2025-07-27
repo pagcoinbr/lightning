@@ -2,9 +2,9 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const { exec } = require('child_process');
 const lightning = require('../index');
 const config = require('../config/brln-elements-config');
-const { exec } = require('child_process');
 
 const app = express();
 const PORT = process.env.PORT || 5003;

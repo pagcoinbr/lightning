@@ -53,7 +53,10 @@
     "unit-tests": "node --test && npm run test:types",
     "brln_test": "node examples/brln-complete-example.js",
     "brln_elements": "node examples/elements_integration_example.js",
-    "brln_monitor": "node -e \"require(\\\"./examples/elements_integration_example.js\\\").monitorLiquidAssets()\""
+    "brln_monitor": "node -e \"require(\\\"./examples/elements_integration_example.js\\\").monitorLiquidAssets()\"",
+    "start": "npm install && node server/brln-server.js",
+    "server": "node server/brln-server.js",
+    "dev": "npm install && npm run server"
   },
   "tsd": {
     "directory": "test/typescript"
